@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+a {
+	text-decoration: none!important;
+}
+.product {
+	margin: 0 5px;
+}
+.product .product-image {
+	overflow: hidden;
+	position: relative;
+}
+.product .product-image a.image {
+	display: block;
+}
+.product .product-image img {
+	width: 100%;
+	height: auto;
+}
+.product .product-image .pic-1 {
+	transition: .5s;
+	cursor: pointer;
+}
+.product .product-image:hover .pic-1 {
+	opacity: 0;
+}
+.product .product-image .pic-2 {
+	width: 100%;
+	backface-visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .5s;
+	cursor: pointer;
+}
+.product .product-image:hover .pic-2 {
+	opacity: 1;
+}
+.product .discount {
+	color: #fff;
+	background: #F7941D;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 30px;
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.product .cart {
+	color: #000;
+	background: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 4px 14px;
+	opacity: .85;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: -75px;
+	left: 50%;
+	transition: .5s;
+}
+.product .cart:hover {
+	opacity: 1;
+	color: #fff;
+	background: #F7941D;
+}
+.product:hover .cart {
+	bottom: 0px;
+}
+.product .links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	opacity: 0;
+	position: absolute;
+	top: 10px;
+	right: -50px;
+	transition: .5s;
+	margin-bottom: 5px;
+}
+.product:hover .links {
+	opacity: 1;
+	right: 10px;
+}
+.product .links li a {
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	display: block;
+	background: #F7941D;
+	transition: .5s;
+	margin-bottom: 5px;
+	padding-top: 1px;
+}
+.product:hover .links li a:hover {
+	color: #fff;
+	background: grey;
+}
+.product .content {
+	padding: 12px;
+}
+.product .category {
+	font-size: 17px;
+	margin: 0 0 5px;
+	display: block;
+}
+.product .category a {
+	color: #999;
+	transition: .5s;
+	font-size: 11px;
+}
+.product .category a:hover {
+	color: #555;
+}
+.product .title {
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 0 8px;
+}
+.product .title a {
+	color: #444;
+	transition: .5s;
+}
+.product .title a:hover {
+	color: #F7941D;
+}
+.product .price {
+	color: #F7941D;
+	font-size: 14px;
+	font-weight: 700;
+}
+.product .price span {
+	color: #888;
+	margin: 0 5px 0 0;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+/*OWL*/
+.owl-controls .owl-buttons {
+	position: relative;
+}
+.owl-controls .owl-prev {
+	position: absolute;
+	left: 5px;
+	bottom: 104px; 
+	padding: 10px 17px 10px 15px;
+	background: #F7941D;
+	transition: .5s;
+	align-items: center;
+	height: auto;
+}
+.owl-controls .owl-next {
+	position: absolute;
+	right: 5px;
+	bottom: 104px;
+	padding: 10px 15px 10px 17px;
+	background: #F7941D;
+	transition: .5s;
+}
+.owl-controls .owl-prev:after, .owl-controls .owl-next:after {
+	content: '\f053';
+	font-family: FontAwesome;
+	color: #fff;
+	font-size: 16px;
+}
+.owl-controls .owl-next:after {
+	content: '\f054';
+}
+.owl-controls .owl-prev:hover, .owl-controls .owl-next:hover {
+	background: grey;
+	
+}

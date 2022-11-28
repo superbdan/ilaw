@@ -1,0 +1,82 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans' , sans-serif;
+}
+/*Customize Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #282828; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F7941D; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.butnavbar {
+  background-color: #282828;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  height: 25px;
+  margin-bottom: 0;
+}
+.container{
+  position: relative;
+  width: 400px;
+  background: #fff;
+}
+.close_btn {
+    background: #F7941D;
+    border: none;
+    border-radius: 2px;
+    color:  #fff;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin-right: -110px;
+    font-size: 80%;
+    white-space: nowrap;
+}
+.close_btn:hover {
+    background: grey;
+}
+
+/*This is for the show password*/
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+/*This is for the password match*/
+.field-icon2 {
+  float: right;
+  margin-left: -16px;
+  margin-top: 5px;
+  z-index: 2;
+}
+

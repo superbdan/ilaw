@@ -1,0 +1,92 @@
+/*Loader CSS */
+.loader {
+    border: 16px solid #f1f1f1;
+    border-radius: 50%;
+    border-top: 16px solid #25AAE2;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    margin: auto;
+    position: relative;
+  }
+.loader-wrapper {
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.loader-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.loader-wave {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ff9f00;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+}
+
+.loader-wave:before,
+.loader-wave:after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.loader-wave:before {
+    border-radius: 45%;
+    background: rgba(255,255,255,1);
+    animation: animate 5s linear infinite;
+    -webkit-animation: animate 5s linear infinite;
+    -ms-animation: animate 5s linear infinite;
+    -moz-animation: animate 5s linear infinite;
+}
+
+.loader-wave:after {
+    border-radius: 40%;
+    background: rgba(255,255,255,.5);
+    animation: animate 10s linear infinite;
+    -webkit-animation: animate 10s linear infinite;
+    -ms-animation: animate 10s linear infinite;
+    -moz-animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% { transform: translate(-50%, -75%) rotate(0deg) }
+    100% { transform: translate(-50%, -75%) rotate(360deg) }
+}
+
+@-webkit-keyframes animate {
+    0% { transform: translate(-50%, -75%) rotate(0deg) }
+    100% { transform: translate(-50%, -75%) rotate(360deg) }
+}
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

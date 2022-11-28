@@ -1,0 +1,18 @@
+.product_image {
+  width: 240px;
+  height: 200px;
+  float: left;
+}
+.list_details {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.item_details {
+  width: 25%;
+  display: inline-block;
+  overflow: hidden; /* without this, the layout breaks in Firefox, too */
+}
+.item_details * {
+  white-space: normal;
+}
