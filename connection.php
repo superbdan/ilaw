@@ -1,8 +1,8 @@
 <?php
 $servername = "127.0.0.1";
-$database = "u707920109_database";
-$username = "u707920109_root";
-$password = "Ilawadmin2021";
+$database = "database";
+$username = "root";
+$password = "";
 // Create connection
 $con = mysqli_connect($servername, $username, $password, $database);
 // Check connection
